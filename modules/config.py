@@ -2,7 +2,7 @@ from SinCity.colors import RED, RESET, GREEN, BLUE, YELLOW
 
 #директории/файл для хранения инфы
 result_dir = 'Result'
-result_file = 'manta.csv'
+result_file = 'result.csv'
 result_file_path = f'{result_dir}/{result_file}'
 
 
