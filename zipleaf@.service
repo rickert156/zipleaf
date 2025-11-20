@@ -1,0 +1,11 @@
+[Unit]
+Description=Parser  Zipleaf for %i
+
+[Service]
+User=%i
+ExecStart=/home/%i/Parser/zipleaf/venv/bin/python3 /home/%i/Parser/zipleaf/__main__.py
+WorkingDirectory=/home/%i/Parser/zipleaf
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
