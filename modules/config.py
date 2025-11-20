@@ -10,6 +10,7 @@ data_dir = 'Data'
 source_categories_file = f'{data_dir}/categories.csv'
 categories_file = f'{data_dir}/company_count.csv'
 complite_categories_url = f'{data_dir}/complite_categories_url.txt'
+complite_company_url = f'{data_dir}/complite_company_url.txt'
 
 
 #статусы

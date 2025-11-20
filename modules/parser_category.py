@@ -46,6 +46,8 @@ def get_max_page(bs:str) -> int:
     return max_page
 
 def start_get_companies(url:str) -> None:
+    if url in get_complite_category_url():
+        return
     try:
         head = header()
         response = requests.get(url, headers=head)
@@ -98,18 +100,20 @@ def get_companies(url:str, max_page:int):
                                         f'Category:\t{category}\n'
                                         )
                                 recording_company_url(
-                                        url=url, 
+                                        url=link, 
                                         company=company, 
                                         location=location,
                                         category=category
                                         )
                                 recording_complite_url(url=full_url)
+                        
 
                     else:
                         print(
                                 f'{log_time()} {status_type_warning} '
                                 f'{url}: {RED}{status_code}{RESET}'
                                 )
+            recording_complite_url(url=url)
     except KeyboardInterrupt:
         sys.exit(f'\n{RED}Exit...{RESET}')
 
