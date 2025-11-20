@@ -11,3 +11,8 @@ python3 -m modules.parser_category --parser-page='https://www.zipleaf.us/Product
 ```sh
 python3 -m modules.parser_page --page="https://www.zipleaf.us/Companies/PKF-Hawaii"
 ```
+
+## Парсим собранные внутренние ссылки на компании
+```sh
+python3 __main__.py
+```
