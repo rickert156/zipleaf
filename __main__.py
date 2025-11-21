@@ -63,7 +63,7 @@ def crowler_service():
                 print(
                         f'{GREEN}{divide_line}\n{RESET}'
                         f'[ {GREEN}{number_company} / {RED}{len_list_company}{RESET} ] '
-                        f'{url} {category}'
+                        f'{url} {category}\n'
                         f'Company:\t{company}\n'
                         f'Site:\t\t{site}\n'
                         f'Phone:\t\t{phone}\n'
